@@ -28,10 +28,10 @@ app.post("/", function(req,res){
         ]
     };
     const jsonData = JSON.stringify(data);
-    const url = "https://us5.api.mailchimp.com/3.0/lists/42d84dc117";
+    const url = "https://us5.api.mailchimp.com/3.0/lists/........"; // edit the dot sign part with your mail id
     const options = {
         method: "POST",
-        auth: "priest:05e870ccfa65d02bc2c7d9bdb109b322-us5"
+        auth: "priest: ......."//edit the dot part with your api key
     }
     const request = https.request(url, options, function(response){
             if (response.statusCode === 200){
